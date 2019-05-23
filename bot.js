@@ -10,4 +10,10 @@ client.on('message', msg => {
     msg.reply('pong');
   }
 });
+
+client.on('message', msg => {
+  if (msg.content === 'mew') {
+    msg.reply('nya');
+  }
+});
 client.login(auth.token);
