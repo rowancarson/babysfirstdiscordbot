@@ -7,13 +7,12 @@ client.on('ready', () => {
 });
 client.on('message', msg => {
   if (msg.content === 'ping') {
-    msg.reply('pong');
-  }
-});
-
-client.on('message', msg => {
+    msg.reply('pong');}
   if (msg.content === 'mew') {
     msg.reply('nya');
   }
+  }
+});
+
 });
 client.login(auth.token);
